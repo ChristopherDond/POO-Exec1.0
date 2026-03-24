@@ -27,3 +27,10 @@ class Produto:
     def mostrar_preco(self):                  
         print(f"{self.nome}: R${self.__preco:.2f}")
 
+p = Produto("Teclado", 150.0)
+p.mostrar_preco()
+p.aplicar_desconto(10)
+p.mostrar_preco()
+p.aumentar_preco(5)
+p.mostrar_preco()
+p.aplicar_desconto(150)   
